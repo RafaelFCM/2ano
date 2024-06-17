@@ -1,0 +1,28 @@
+1) Integrantes do grupo:
+	* Carlos Henrique Lins Ponchirolli - RM94003
+	* Leonardo Arantes Bianchini Gomes - RM94183
+	* Rafael Fiel Cruz Miranda - RM94654
+	
+2) Descrição do projeto desenvolvido:
+	* Coleta de dados: Os sensores instalados na propriedade coletam as medidas periódicas, como umidade do solo, pH, concentração de nutrientes, entre outros. Esses dados são enviados para um sistema centralizado.
+		
+	* Processamento dos dados: O sistema de IA recebe as leituras dos sensores e processa os dados. Ele analisa os valores em relação aos intervalos considerados adequados para cada parâmetro e identifica desvios significativos.
+		
+	* Alertas e recomendações: Se algum valor estiver fora do intervalo adequado, o sistema de IA gera alertas para o agricultor. Esses alertas podem ser enviados por meio de um aplicativo móvel, mensagem de texto ou e-mail, por exemplo. O agricultor é informado sobre a medida específica que está fora do intervalo, permitindo que ele tome ações corretivas.
+	
+	* Recomendações de irrigação e suplementação de nutrientes: Com base nas leituras dos sensores e em modelos de cultivo, o sistema de IA pode fornecer recomendações personalizadas para irrigação e suplementação de elementos químicos. Ele considera não apenas os valores atuais, mas também fatores como o tipo de cultura, estágio de crescimento e condições climáticas. As recomendações podem ser fornecidas por meio da aplicação ou por outros meios de comunicação.		
+	
+	* É importante ressaltar que os intervalos de valores adequados para cada parâmetro podem variar dependendo do tipo de cultura e das condições locais. Por isso, é necessário realizar uma pesquisa específica para determinar esses intervalos para a região e culturas de interesse. Os dados de referência podem ser obtidos por meio de estudos científicos, recomendações agronômicas ou consultando especialistas na área.
+
+	* Para nosso sistema vamos usar como base a cultura da soja. Para ela, os intervalos adequados de concentração de nutrientes no solo geralmente são:
+		- Concentração de nitrogênio (N): 20-150 kg/ha
+		- Concentração de fósforo (P): 10-40 kg/ha
+		- Concentração de potássio (K): 100-300 kg/ha
+
+	* Lembrando que esses intervalos podem variar um pouco dependendo das fontes consultadas, das condições específicas da região e do solo, e das práticas de cultivo.
+
+	* Portanto, os critérios para gerar alertas serão essas concentrações, se a amostra apresentar valores fora do intervalo, a amostra é encaminhada para fila de amostras que devem ser atendidas/precisam de atenção do agricultor. E essa fila será administrada a partir da urgencia do atendimento, ou seja, se a amostra 1 apresentar uma situação pior que a amostra 2, a amostra 1 vem antes na fila.
+		
+	* As referências usadas para as concentrações foram:
+		- https://blog.aegro.com.br/calculo-de-adubacao-para-soja/
+		- https://www.brasmaxgenetica.com.br/blog/adubacao-para-soja/

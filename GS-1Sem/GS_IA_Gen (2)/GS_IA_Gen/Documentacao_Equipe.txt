@@ -1,0 +1,88 @@
+							Global Solution – Códigos de Alta Performance
+									    1º semestre / 2023
+
+
+
+										AlimentaAI
+
+
+
+1) Integrantes do grupo:
+
+	* Carlos Henrique Lins Ponchirolli - RM94003
+	* Leonardo Arantes Bianchini Gomes - RM94183
+	* Rafael Fiel Cruz Miranda - RM94654
+
+2) Descrição do projeto desenvolvido:
+	
+	No início do projeto teremos já alguns sensores presentes na propriedade, mas caso o proprietário queira adicionar mais sensores na propriedade ele terá que 	primeiramente inserir nos registros dos sensores as seguintes informações:coordenadas do sensor,umidade, pH, quant_nitrogenio, quant_postassio e quant_fosforo, 	a partir de uma janela gráfica (JOptionPane).
+
+	-Coordenadas dos sensores iniciais:
+
+	Sensor 1: 47°55'44"W,21°00'34"S
+	Sensor 2: 47°55'42"W,21°00'35"S
+	Sensor 3: 47°55'39"W,21°00'37"S
+	Sensor 4: 47°55'44"W,21°00'39"S
+	Sensor 5: 47°55'40"W,21°00'40"S
+	Sensor 6: 47°55'32"W,21°00'34"S
+	Sensor 7: 47°55'28"W,21°00'34"S
+	Sensor 8: 47°55'28"W,21°00'38"S
+	Sensor 9: 47°55'33"W,21°00'39"S
+	
+
+	1)SENSOR
+
+		Nesse projeto, criamos sensores que coletam umidade, pH, quant_nitrogenio, quant_postassio e quant_fosforo de uma plantação de milho. Esses sensores exibem alertas caso de valores das medidas mencionadas anteriormente não estejam adequadas.	
+		
+		Segue abaixo o intervalo de medidas adequadas:
+    
+    			1)NITROGÊNIO: 
+
+    				NITROGENIO_MIN = 15kg
+    				NITROGENIO_MAX = 20kg
+    
+    			2)FÓSFORO:
+ 
+   				FOSFORO_MIN = 5.7kg
+    				FOSFORO_MAX = 6.5kg
+
+    			3)POTÁSSIO:
+
+    				POTASSIO_MIN = 120kg
+   	 			POTASSIO_MAX = 150kg
+    
+    			4)UMIDADE:
+	
+    				UMIDADE_MIN = 60%
+    				UMIDADE_MAX = 80%
+    
+    			5)PH:
+
+    				PH_MIN = 5.5
+    				PH_MAX = 7.5
+
+    
+		Os sensores terão em seus registros as seguintes informações: coordenadas do sensor,umidade, pH, quant_nitrogenio, quant_postassio e quant_fosforo.
+
+
+	2)LISTA DE SENSORES
+
+		Os sensores serão organizados em uma lista que será ordenada por ordem 	crescente de umidade, já que esta é a medida mais importante em uma plantação de milho.
+
+
+	3)FILA DE SENSORES:
+
+		Fila que guarda os registros do sensores que tenham coordenadas com mais de 1 parâmetro(umidade, pH, quant_nitrogenio,quant_postassio e quant_fosforo)	fora do intervalo adequado.
+	
+
+	4)REFERÊNCIAS:
+	
+		http://criareplantar.com.br/agricultura/lerTexto.php?categoria=46&id=672
+
+		https://ainfo.cnptia.embrapa.br/digital/bitstream/item/73399/1/Manejo-solo-1.pdf
+
+		http://www.cnpt.embrapa.br/publicacoes/sist-prod/cevada02/cev6-3-1.htm#:~:text=A%20dose%20de%20nitrog%C3%AAnio%20a,15%20e%2020%20kg%2Fha.
+
+		https://blog.verde.ag/nutricao-de-plantas/potassio-para-milho-descubra-quando-e-quanto-aplicar/
+
+		https://ainfo.cnptia.embrapa.br/digital/bitstream/item/41579/1/Fosforo-milho.pdf

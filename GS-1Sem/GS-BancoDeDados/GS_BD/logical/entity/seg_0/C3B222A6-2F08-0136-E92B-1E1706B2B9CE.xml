@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3B222A6-2F08-0136-E92B-1E1706B2B9CE" name="PROPRIETARIOS">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-07 23:21:54 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_proprietario" id="5B323DAA-DA23-98E4-7D3D-BB08C51A0C9C">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-07 23:22:07 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="primeiro_nome" id="4CD94149-50D7-0C3F-88C5-64CD7EADDA23">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-07 23:22:07 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ultimo_nome" id="185F57A2-E899-F335-542D-62CA0E56D524">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-07 23:22:44 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="F6A4E094-8526-BC9C-7598-0D2B3D49EFED">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-07 23:22:07 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endereco" id="474862BF-B81F-D75B-4B7A-1ECA2463E52B">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-29 19:33:01 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E67C343-2083-4C84-AC43-63B6FC5F7613" name="CLIENTES PK">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-07 23:22:14 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5B323DAA-DA23-98E4-7D3D-BB08C51A0C9C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BBA7E0EF-69CF-3418-6E18-20A857CCED92" name="Unique">
+<createdBy>01raf</createdBy>
+<createdTime>2023-05-18 18:57:28 UTC</createdTime>
+<ownerDesignName>GS_BD</ownerDesignName>
+<engineerTo>
+<item key="936089C9-434F-7A77-217C-C0A5F07279D7" value="true"/>
+</engineerTo>
+<newElementsIDs>F6A4E094-8526-BC9C-7598-0D2B3D49EFED</newElementsIDs>
+<usedAttributes>
+<attributeRef>F6A4E094-8526-BC9C-7598-0D2B3D49EFED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
