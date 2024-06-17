@@ -1,0 +1,33 @@
+:root {
+    --fonte-titulo: playfair display;
+    --fonte-texto: poppins;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../images/logo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+    font-size: 2em;
+    font-family: var(--fonte-texto);
+    font-weight: lighter;
+}
+
+.texto {
+    margin-top: 10em;
+}

@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+:root {
+    --fonte-titulo: playfair display;
+    --fonte-texto: poppins;
+}
+
+/* section {
+    height: 100vh;
+} */
+
+.escondendo {
+    color: #e12726;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+}
+
+p {
+    font-family: var(--fonte-texto);
+}
+
+h3 {
+    font-family: var(--fonte-texto);
+    font-weight: lighter;
+}
+
+.introduction {
+    background-image: linear-gradient(rgba(0.5, 0, 0, 0.8), rgba(0.5, 0, 0, 0.6)),
+        url(../images/US-KH-KetchupHero.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.context {
+    border-radius: 2%;
+    background-color: #e12726;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    border-radius: 5%;
+}
+
+.form {
+    background-color: white;
+}
+
+.about-us {
+    background-color: #e12726;
+    color: white;
+}
+
+.fa-brands {
+    color: black;
+    /* font-size: 1.5rem; */
+}
